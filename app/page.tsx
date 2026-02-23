@@ -1,21 +1,15 @@
 import { BlogPosts } from 'app/components/posts'
+import HeroSlideshow from 'app/components/hero-slideshow'
 
 export default function Page() {
   return (
-    <section className='max-w-2xl mx-4 mt-8 lg:mx-auto'>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
-      </h1>
-      <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
-      </p>
-      <div className="my-8">
-        <BlogPosts />
-      </div>
-    </section>
+    <>
+      <HeroSlideshow />
+      <section className='max-w-2xl mx-4 mt-8 lg:mx-auto'>
+        <div className="my-8">
+          <BlogPosts />
+        </div>
+      </section>
+    </>
   )
 }
