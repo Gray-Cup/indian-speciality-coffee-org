@@ -1,60 +1,35 @@
-function ArrowIcon() {
-  return (
-    <svg
-      width="12"
-      height="12"
-      viewBox="0 0 12 12"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z"
-        fill="currentColor"
-      />
-    </svg>
-  )
+import Link from 'next/link'
+
+const footerNavItems = {
+  '/': { name: 'Home' },
+  '/blog': { name: 'Blog' },
+  '/about': { name: 'About' },
+  '/sourcing': { name: 'Sourcing' },
+  '/contact': { name: 'Contact' },
 }
 
 export default function Footer() {
   return (
-    <footer className="mb-16">
-      <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="/rss"
+    <footer className="pt-16 bottom-0 bg-amber-200 pb-8 text-center border-t border-neutral-200 pt-8">
+      <p className="text-xl font-bold tracking-widest uppercase">
+        Indian Speciality Coffee
+      </p>
+      <p className="text-xs text-neutral-700 mt-1">
+        managed by <a href="https://graycup.org" target='_blank' className='underline'>Gray Cup Enterprises Private Limited</a>
+      </p>
+      <nav className="flex flex-row justify-center space-x-4 mt-4 text-sm text-neutral-900">
+        {Object.entries(footerNavItems).map(([path, { name }]) => (
+          <Link
+            key={path}
+            href={path}
+            className="transition-all hover:underline hover:text-neutral-950"
           >
-            <ArrowIcon />
-            <p className="ml-2 h-7">rss</p>
-          </a>
-        </li>
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://github.com/vercel/next.js"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">github</p>
-          </a>
-        </li>
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://vercel.com/templates/next.js/portfolio-starter-kit"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">view source</p>
-          </a>
-        </li>
-      </ul>
-      <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        © {new Date().getFullYear()} MIT Licensed
+            {name}
+          </Link>
+        ))}
+      </nav>
+      <p className="mt-6 text-xs text-neutral-700">
+        © {new Date().getFullYear()} Gray Cup Enterprises Private Limited. All rights reserved.
       </p>
     </footer>
   )
