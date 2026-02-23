@@ -1,7 +1,7 @@
 export const metadata = {
   title: 'Roasters',
   description:
-    'A directory of India's specialty coffee roasters — the people translating farm quality into cup quality.',
+    "A directory of India's specialty coffee roasters — the people translating farm quality into cup quality.",
 }
 
 const roasters = [
