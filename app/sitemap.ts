@@ -1,6 +1,6 @@
 import { getBlogPosts } from 'app/blog/utils'
 
-export const baseUrl = 'https://indianspecialitycoffee.com'
+export const baseUrl = 'https://indian-speciality-coffee-org.vercel.app'
 
 const staticRoutes = [
   { path: '', priority: 1.0 },
