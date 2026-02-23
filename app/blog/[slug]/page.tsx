@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation'
 import { CustomMDX } from 'app/components/mdx'
 import { formatDate, getBlogPosts } from 'app/blog/utils'
 import { baseUrl } from 'app/sitemap'
+import Link from 'next/link'
 
 export async function generateStaticParams() {
   let posts = getBlogPosts()
@@ -59,7 +60,7 @@ export default function Blog({ params }) {
   }
 
   return (
-    <section>
+    <div className="max-w-2xl mx-auto px-6 py-14">
       <script
         type="application/ld+json"
         suppressHydrationWarning
@@ -76,23 +77,52 @@ export default function Blog({ params }) {
               : `/og?title=${encodeURIComponent(post.metadata.title)}`,
             url: `${baseUrl}/blog/${post.slug}`,
             author: {
-              '@type': 'Person',
-              name: 'My Portfolio',
+              '@type': 'Organization',
+              name: 'Indian Speciality Coffee',
             },
           }),
         }}
       />
-      <h1 className="title font-semibold text-2xl tracking-tighter">
-        {post.metadata.title}
-      </h1>
-      <div className="flex justify-between items-center mt-2 mb-8 text-sm">
-        <p className="text-sm text-neutral-600">
+
+      {/* Back link */}
+      <div className="mb-10">
+        <Link
+          href="/blog"
+          className="text-xs uppercase tracking-widest text-amber-700 font-medium hover:text-amber-950 transition-colors"
+        >
+          ← Coffee Journal
+        </Link>
+      </div>
+
+      {/* Article Header */}
+      <div className="border-b border-amber-950/10 pb-8 mb-10">
+        <p className="text-xs uppercase tracking-widest text-amber-700 font-medium mb-4">
           {formatDate(post.metadata.publishedAt)}
         </p>
+        <h1 className="text-3xl lg:text-4xl font-black tracking-tight text-amber-950 leading-tight mb-4 title">
+          {post.metadata.title}
+        </h1>
+        {post.metadata.summary && (
+          <p className="text-base text-amber-950/60 leading-relaxed">
+            {post.metadata.summary}
+          </p>
+        )}
       </div>
-      <article className="prose">
+
+      {/* Article Body */}
+      <article className="prose max-w-none">
         <CustomMDX source={post.content} />
       </article>
-    </section>
+
+      {/* Footer */}
+      <div className="border-t border-amber-950/10 mt-12 pt-8">
+        <Link
+          href="/blog"
+          className="text-xs uppercase tracking-widest text-amber-700 font-medium hover:text-amber-950 transition-colors"
+        >
+          ← Back to Coffee Journal
+        </Link>
+      </div>
+    </div>
   )
 }

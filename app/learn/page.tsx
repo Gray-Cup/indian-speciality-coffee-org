@@ -3,7 +3,7 @@ import Link from 'next/link'
 export const metadata = {
   title: 'Learn',
   description:
-    'A guide to Indian specialty coffee — from what specialty means, to growing regions, varietals, processing, brewing, and how to evaluate what's in your cup.',
+    "A guide to Indian specialty coffee — from what specialty means, to growing regions, varietals, processing, brewing, and how to evaluate what's in your cup.",
 }
 
 export default function LearnPage() {
@@ -120,7 +120,7 @@ export default function LearnPage() {
             },
             {
               varietal: 'Kent',
-              notes: 'One of India's oldest named varieties, a Bourbon-derived selection. Produces excellent cup quality — wine-like, bright, fruit-forward — but is susceptible to Coffee Leaf Rust.',
+              notes: "One of India's oldest named varieties, a Bourbon-derived selection. Produces excellent cup quality — wine-like, bright, fruit-forward — but is susceptible to Coffee Leaf Rust.",
             },
             {
               varietal: 'Cauvery (Catimor)',
@@ -165,7 +165,7 @@ export default function LearnPage() {
             {
               method: 'Washed (Wet)',
               flavour: 'Clean, bright, origin-expressive',
-              description: 'The coffee cherry's fruit is removed before drying. The result is a clean, transparent cup where the bean's inherent character — terroir, varietal, altitude — is most legible. Most Indian specialty Arabica is washed.',
+              description: "The coffee cherry's fruit is removed before drying. The result is a clean, transparent cup where the bean's inherent character — terroir, varietal, altitude — is most legible. Most Indian specialty Arabica is washed.",
             },
             {
               method: 'Natural (Dry)',

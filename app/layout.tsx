@@ -11,16 +11,16 @@ import { baseUrl } from './sitemap'
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Next.js Portfolio Starter',
-    template: '%s | Next.js Portfolio Starter',
+    default: 'Indian Speciality Coffee',
+    template: '%s | Indian Speciality Coffee',
   },
-  description: 'This is my portfolio.',
+  description: "Celebrating India's coffee regions, producers, and unique flavour profiles.",
   openGraph: {
-    title: 'My Portfolio',
-    description: 'This is my portfolio.',
+    title: 'Indian Speciality Coffee',
+    description: "Celebrating India's coffee regions, producers, and unique flavour profiles.",
     url: baseUrl,
-    siteName: 'My Portfolio',
-    locale: 'en_US',
+    siteName: 'Indian Speciality Coffee',
+    locale: 'en_IN',
     type: 'website',
   },
   robots: {

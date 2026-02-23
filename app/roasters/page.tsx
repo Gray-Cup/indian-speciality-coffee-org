@@ -38,7 +38,7 @@ const roasters = [
     founded: '2017',
     focus: 'Tribal cooperative, single origin, export',
     description:
-      'The commercial arm of the Naandi Foundation's work in Araku Valley. Araku Coffee opened a boutique in Paris before establishing significant domestic retail — a deliberate positioning as a world-class specialty origin. Multiple international award wins.',
+      "The commercial arm of the Naandi Foundation's work in Araku Valley. Araku Coffee opened a boutique in Paris before establishing significant domestic retail — a deliberate positioning as a world-class specialty origin. Multiple international award wins.",
     region: 'South India / International',
   },
   {
@@ -47,7 +47,7 @@ const roasters = [
     founded: '2013',
     focus: 'Farm-to-cup, estate-based roasting',
     description:
-      'Founded by Aparna and Ashish Battina on their family estate in Coorg, The Flying Squirrel is one of India's most compelling farm-to-cup operations. Green beans are processed and roasted on-estate, with full traceability across every lot.',
+      "Founded by Aparna and Ashish Battina on their family estate in Coorg, The Flying Squirrel is one of India's most compelling farm-to-cup operations. Green beans are processed and roasted on-estate, with full traceability across every lot.",
     region: 'South India',
   },
   {
@@ -92,7 +92,7 @@ const roasters = [
     founded: '2016',
     focus: 'Specialty cafe chain, scale and quality',
     description:
-      'One of India's fastest-growing specialty cafe chains, Third Wave has expanded nationally while maintaining a meaningful focus on coffee quality and barista training. A significant force in normalising specialty cafe culture beyond metro cities.',
+      "One of India's fastest-growing specialty cafe chains, Third Wave has expanded nationally while maintaining a meaningful focus on coffee quality and barista training. A significant force in normalising specialty cafe culture beyond metro cities.",
     region: 'Pan-India',
   },
   {

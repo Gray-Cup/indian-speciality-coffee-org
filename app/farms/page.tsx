@@ -1,7 +1,7 @@
 export const metadata = {
   title: 'Farms & Growing Regions',
   description:
-    'Explore India's major coffee-growing regions — from the shade-grown estates of Coorg to the tribal cooperatives of Araku Valley.',
+    "Explore India's major coffee-growing regions — from the shade-grown estates of Coorg to the tribal cooperatives of Araku Valley.",
 }
 
 const regions = [
@@ -10,7 +10,7 @@ const regions = [
     state: 'Karnataka',
     elevation: '900–1,500m',
     varietals: 'Arabica (S795, Cauvery), Robusta',
-    area: 'India's largest coffee-growing district, ~30% of national output.',
+    area: "India's largest coffee-growing district, ~30% of national output.",
     flavours: 'Pepper spice, dark chocolate, mild acidity. Dense shade under silver oak and rosewood.',
     estates: 'Tata Coffee, Harley Estate, Pollibetta Group',
     note: 'Home to the legendary Balmuri and other centenary estates. Coffee grows alongside black pepper and cardamom.',
@@ -21,7 +21,7 @@ const regions = [
     elevation: '1,000–1,700m',
     varietals: 'Arabica (S795, Kent, Cauvery)',
     area: 'Birthplace of Indian coffee. Includes the sacred Baba Budan Giri range.',
-    flavours: 'Wine-like brightness at altitude, stone fruit, cocoa. One of India's most complex origins.',
+    flavours: "Wine-like brightness at altitude, stone fruit, cocoa. One of India's most complex origins.",
     estates: 'Ratnagiri Estate, Classic Coffee, Barista Reserve',
     note: 'The seven beans Baba Budan smuggled from Yemen were planted here in the 17th century. Chikmagalur remains the spiritual home of Indian coffee.',
   },
@@ -40,10 +40,10 @@ const regions = [
     state: 'Karnataka',
     elevation: '1,500–1,900m',
     varietals: 'Arabica (heritage varieties)',
-    area: 'High-altitude belt within Chikmagalur, among India's most elevated coffee land.',
+    area: "High-altitude belt within Chikmagalur, among India's most elevated coffee land.",
     flavours: 'Exceptional cup clarity, bright acidity, complex fruit. Limited production volumes.',
     estates: 'Various smallholder estates',
-    note: 'The highest coffee-growing zone in India. Microlots from here routinely score among the country's highest in cupping evaluations.',
+    note: "The highest coffee-growing zone in India. Microlots from here routinely score among the country's highest in cupping evaluations.",
   },
   {
     name: 'Wayanad',
@@ -73,7 +73,7 @@ const regions = [
     area: 'Anamalai Hills, biodiversity-rich Southern Ghats.',
     flavours: 'Forest character, mild earthiness, clean body. Unique microclimate complexity.',
     estates: 'Parry Agro Industries, various',
-    note: 'One of India's more underexplored origins. The dense Anaimalai forests create remarkable microclimate variation across short distances.',
+    note: "One of India's more underexplored origins. The dense Anaimalai forests create remarkable microclimate variation across short distances.",
   },
 ]
 

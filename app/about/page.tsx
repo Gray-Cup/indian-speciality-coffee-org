@@ -3,7 +3,7 @@ import Link from 'next/link'
 export const metadata = {
   title: 'About',
   description:
-    'About Indian Speciality Coffee — a project dedicated to documenting and celebrating India's coffee growing regions, producers, roasters, and culture.',
+    "About Indian Speciality Coffee — a project dedicated to documenting and celebrating India's coffee growing regions, producers, roasters, and culture.",
 }
 
 export default function AboutPage() {
@@ -58,11 +58,11 @@ export default function AboutPage() {
           {[
             {
               area: 'Growing Regions',
-              desc: 'The geography, varietals, elevations, and estates of India's major and minor coffee origins — from Coorg to Araku, from the Nilgiris to Wayanad.',
+              desc: "The geography, varietals, elevations, and estates of India's major and minor coffee origins — from Coorg to Araku, from the Nilgiris to Wayanad.",
             },
             {
               area: 'Roasters',
-              desc: 'The roasters translating farm quality into cup quality — their sourcing philosophy, technical approach, and role in building India's specialty market.',
+              desc: "The roasters translating farm quality into cup quality — their sourcing philosophy, technical approach, and role in building India's specialty market.",
             },
             {
               area: 'Coffee Education',
@@ -70,7 +70,7 @@ export default function AboutPage() {
             },
             {
               area: 'History & Culture',
-              desc: 'The centuries-long story of coffee in India — from Baba Budan's seven beans to the current third-wave moment — and the living culture of South Indian filter coffee.',
+              desc: "The centuries-long story of coffee in India — from Baba Budan's seven beans to the current third-wave moment — and the living culture of South Indian filter coffee.",
             },
           ].map((item) => (
             <div key={item.area} className="border border-amber-950/10 p-6 -mt-px -ml-px">
