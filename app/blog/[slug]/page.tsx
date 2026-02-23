@@ -12,21 +12,14 @@ export async function generateStaticParams() {
   }))
 }
 
+// OG image is handled by opengraph-image.tsx in this directory (file-based convention)
 export function generateMetadata({ params }) {
   let post = getBlogPosts().find((post) => post.slug === params.slug)
   if (!post) {
     return
   }
 
-  let {
-    title,
-    publishedAt: publishedTime,
-    summary: description,
-    image,
-  } = post.metadata
-  let ogImage = image
-    ? image
-    : `${baseUrl}/og?title=${encodeURIComponent(title)}`
+  const { title, publishedAt: publishedTime, summary: description } = post.metadata
 
   return {
     title,
@@ -37,17 +30,11 @@ export function generateMetadata({ params }) {
       type: 'article',
       publishedTime,
       url: `${baseUrl}/blog/${post.slug}`,
-      images: [
-        {
-          url: ogImage,
-        },
-      ],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: [ogImage],
     },
   }
 }
