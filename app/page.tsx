@@ -7,7 +7,7 @@ export const metadata = {
     images: [
       {
 
-        url: `/og.webp`,
+        url: `https://indian-speciality-coffee-org.vercel.app/og.webp`,
         width: 1200,
         height: 630,
         alt: 'Indian Speciality Coffee',
@@ -16,7 +16,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image' as const,
-    images: "/og.webp",
+    images: "https://indian-speciality-coffee-org.vercel.app/og.webp",
   },
 }
 
